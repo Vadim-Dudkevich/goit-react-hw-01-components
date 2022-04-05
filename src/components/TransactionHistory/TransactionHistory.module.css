@@ -21,8 +21,8 @@ td {
   color: #0f2f44;
 } */
 
-tr:hover,
-tr:focus {
+.dataTransaction:hover,
+.dataTransaction:focus {
   background-color: #eaf1ff;
   color: #0f2f44;
 }
