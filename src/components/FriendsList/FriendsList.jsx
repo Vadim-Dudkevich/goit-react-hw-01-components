@@ -5,13 +5,9 @@ import css from './FriendsList.module.css';
 export default function FriendsList({ friends }) {
   return (
     <ul className={css.friendList}>
-      {friends.map(friend => (
-        <li key={friend.id} className={css.friendsItem}>
-          <Friend
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
-          />
+      {friends.map(({ id, avatar, name, isOnline }) => (
+        <li k ey={id} className={css.friendsItem}>
+          <Friend avatar={avatar} name={name} isOnline={isOnline} />
         </li>
       ))}
     </ul>
